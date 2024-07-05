@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="intro">Cricket Fan Form</h1>
+    <p id="intro">Thank you for taking the time to help us improve the platform</p>
+    <form action="#" id="container">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Age" min="18" max="150" required>
+            <label for="age">City</label>
+            <input type="text" id="city" placeholder="Your City">
+
+            <label for="favourite_player">Favourite Player</label>
+            <input type="text" id="favourite_player" name="favourite_player" placeholder="Enter your Favourite Player"
+                required>
+
+            <label for="favourite_team">Favourite Team</label>
+            <select id="favourite_team" name="favourite_team" required>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="England">England</option>
+                <option value="South Africa">South Africa</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="West Indies">West Indies</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Bangladesh">Bangladesh</option>
+            </select>
+            <label for="favourite_format">Favourite Format</label>
+            <select id="favourite_format" name="favourite_format" required>
+                <option value="Test">Test</option>
+                <option value="ODI">ODI</option>
+                <option value="T20">T20</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+            <button type="submit">Submit</button>
+
+
+
+        </fieldset>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
