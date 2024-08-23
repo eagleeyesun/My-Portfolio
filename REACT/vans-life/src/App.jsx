@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Home from '../components/Home'
 import About from '../components/About'
 import Vans, { vansLoader} from '../components/vans/Vans'
+import VanDetails from '../components/vans/VanDetails'
 import "../components/Server"
 
 
@@ -13,6 +14,7 @@ const router = createBrowserRouter(createRoutesFromElements(
   <Route  index element={<Home/>} />
   <Route  path="about" element={<About/>} />
   <Route  path="vans" element={<Vans />} loader={vansLoader}/>
+  <Route path="vans/:id" element={<VanDetails />} />
   </Route>
 
 ))
