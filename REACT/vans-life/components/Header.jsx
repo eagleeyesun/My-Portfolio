@@ -6,10 +6,11 @@ export default function Header() {
         <header>
             <Link to="/" className="site-logo">#VANLIFE</Link>
             <nav>
+                
                 <NavLink to="/host">Host</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/vans">Vans</NavLink>
-
+                <NavLink to="/login">Login</NavLink>
             </nav>
         </header>
     )

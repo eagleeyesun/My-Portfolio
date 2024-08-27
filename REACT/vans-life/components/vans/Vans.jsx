@@ -7,13 +7,14 @@ export const vansLoader = async () => {
 };
 
 export default function Vans() {
- // const [searchParams,setSearchParams] = useSearchParams()
-  //const typeFilter = searchParams.get("type")
+  const vans = useLoaderData();
+  const [searchParams,setSearchParams] = useSearchParams()
+  const typeFilter = searchParams.get("type")
 
-  //const displayedVans = typeFilter ? vans.filter(van=>van.type === typeFilter) : vans
+  const displayedVans = typeFilter ? vans.filter(van=>van.type === typeFilter) : vans
 
-    const vans = useLoaderData();
-    const vanElements = vans.map( van =>(
+    
+    const vanElements = displayedVans.map( van =>(
       <div key={van.id} className="van-tile" >
         <Link to={`/vans/${van.id}`}>
         <img src={van.imageUrl} alt={van.name} />
@@ -27,6 +28,12 @@ export default function Vans() {
     return (
       <div>
       <h1 className="vans-intro">Explore our van options</h1>
+      <div className="van-list-filter">
+              <Link className="van-type simple" to="?type=simple">Simple</Link>
+              <Link className="van-type rugged" to="?type=rugged">Rugged</Link>
+              <Link className="van-type luxury" to="?type=luxury">Luxury</Link>
+              <Link className="van-type clear" to=".">Clear filters</Link>
+            </div>
         <div className="vans-container">
             
             {vanElements}

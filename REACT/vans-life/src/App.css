@@ -1,13 +1,15 @@
-* {
+*  {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: inter,sans-serif;
 }
 
+
 main{
-  background-color: #FFEAD0;
+  background-color: #FFCC8D;
 }
+
 
 header{
   display: flex;
@@ -26,7 +28,7 @@ header{
 }
 
 .site-wrapper{
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
 }
@@ -101,7 +103,7 @@ footer{
   align-items: center;
   font-weight: 500;
   margin-top: auto;
-
+  
 }
 
 .about-container{
@@ -220,7 +222,7 @@ footer{
   
 }
 
-.van-datail {
+.van-detail {
   display: flex;
   flex-direction: column;
   color: #161616;
@@ -233,7 +235,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 580px;
+  height: 550px;
 }
 
 .link-button{
@@ -249,17 +251,208 @@ footer{
   border: none;
 }
 
-.van-datail h2{
+.van-detail h2{
   padding-top: 10px;
 }
 
-.van-datail p {
+.van-detail p {
   padding-top: 10px;
 }
 
-.van-datail i {
+.van-detail i {
   width: 90px;
   height: 40px;
   display: inline-block;
-  margin-top: 10px;
+  margin-block: 30px;
 }
+
+.van-list-filter {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FFCC8D;
+  align-items: center;
+  margin-inline: 20px;
+  border-radius: 5px;
+}
+
+.van-list-filter > a {
+  text-decoration: none;
+  color: #4D4D4D;
+  padding: 10px;
+}
+ 
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  height: 80vh;
+  margin: 20px;
+}
+
+.login-container h1 {
+  text-align: center;
+  padding: 60px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-form button{
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #FF8C38;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+input {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+}
+
+.host-nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  
+  padding: 20px;
+}
+
+.host-nav a {
+  text-decoration: none;
+  color: #161616;
+  
+}
+
+.host-nav :hover{
+    color: #161616;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.host-vans{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 21vh;
+  margin-bottom: 15px;
+  padding-block: 18px;
+  padding-left: 24px;
+  margin-inline: 20px;
+}
+ .host-vans > img {
+  height: 70px;
+  border-radius: 5px;
+  margin-right: 17px;
+ }
+
+ .host-vans h3 {
+  padding: 10px;
+ }
+
+ .host-van-intro{
+  padding: 20px;
+  color:#E17654;
+ }
+
+ .host-van-link-wrapper{
+  text-decoration: none;
+  color: #161616;
+ }
+
+ /* Host Van Details */
+
+ .host-van-detail-layout-container {
+  background-color: white;
+  padding: 24px;
+  margin: 30px 26px;
+  height: 68vh;
+}
+
+.host-van-detail {
+  display: flex;
+  align-items: center;
+}
+
+.host-van-detail > img {
+  height: 160px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.host-van-detail-info-text > h3 {
+  margin-top: 24px;
+  margin-bottom: 5px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.host-van-detail-info-text > h4 {
+  font-size: 20px;
+  margin-block: 0;
+}
+
+.host-van-detail-nav {
+  display: flex;
+  margin-block: 25px;
+}
+
+.host-van-detail-nav a {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+
+.host-van-detail-nav a:first-of-type {
+  text-decoration: none;
+  color: #4D4D4D;
+  font-weight: 500;
+  padding: 5px 15px;
+  margin-left: -15px;
+}
+
+.host-van-detail-nav a:hover {
+  color: #161616;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.host-van-detail-info > h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.host-van-detail-info > h4 > span {
+  font-weight: 500;
+}
+
+.back-to-all-vans{
+  padding: 30px;
+  text-decoration: none;
+  color: #E17654;
+}
+
+
+
+
+ .dashboard{
+  height: 76vh;
+ }
+
+ .income{
+  height: 76vh;
+ }
+
+ .reviews{
+  height: 76vh;
+ }
