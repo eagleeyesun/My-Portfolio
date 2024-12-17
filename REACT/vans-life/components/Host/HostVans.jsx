@@ -2,7 +2,9 @@ import React , { useState,useEffect }from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import {getHostVans} from "../api";
 
-export const hostVansLoader = async () => {
+
+export async function loader (){
+    
     return getHostVans()
 }
 
